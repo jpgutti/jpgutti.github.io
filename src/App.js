@@ -1,26 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import './components/Content'
+import Myself from './assets/myself.jpeg'
 
-function App() {
+import {
+  ReactText, CssText
+} from './components/Styled'
+import Content from './components/Content';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="jpgutti" className="container">
+      <div className="head d-flex justify-content-between">
+        <div className="head__left">
+          <img id="Myselfie" alt="Me" src={Myself} />
+          <div className="d-flex flex-column align-self-stretch">
+            <h1>João Pedro Lima</h1>
+            <h3>Front End Developer</h3>
+            <a href="mailto:jpgutti08@hotmail.com">jpgutti08@hotmail.com</a>
+            <span className="mt-auto">Toolbox: <ReactText>React.js</ReactText>, <CssText>CSS3</CssText></span>
+          </div>
+        </div>
+        <div className="head__right text-right">
+
+        </div>
+      </div>
+      <hr/>
+      <Content/>
     </div>
-  );
+  )
 }
 
 export default App;
