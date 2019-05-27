@@ -1,44 +1,29 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,500,600,700&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,500,600,700&display=swap'); */
 @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('./assets/fonts/HelveticaNowDisplayXBlk.otf');
+}
 
 body {
     font-family: "IBM Plex Mono";
-    background: #f1f1f1;
-    color: #153243;
+    background-image: linear-gradient(to right,#FAA916 50%, #f8f8f8 50%);
 }
 
 #jpgutti {
-    padding-top: 40px;
+    width: 100vw;
+    height: 100vw;
+    position: relative;
 }
 
-#Myselfie{
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 20px;
-}
-
-.head__left {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.head__left a{
-    color: #153243;
-    text-decoration: underline;
-}
-
-.head__left h1 {
-    font-size: 2rem;
-}
-
-.head__left h3 {
-    font-size: 1.25rem;
-}
-
-.head__left > div {
-
+.Typed {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: #292929;
+    font-family: 'Helvetica';
 }
